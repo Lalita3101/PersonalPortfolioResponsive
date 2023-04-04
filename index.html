@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal Posrtfolio Website</title>
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/67c8605b32.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo" />
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#">Hobbies</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars menu" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Personal Portfolio Website</p>
+                    <h1>Hi I'm <br /><span>Lalita</span> Pulavarti.</h1>
+                </div>
+            </div>
+        </div>
+
+        <!---about-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png" />
+                    </div>
+                    <div class="about-col-1">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Perspiciatis id iste, totam quia eius dolor
+                            earum corporis, quis voluptatem quae non omnis
+                            explicabo? Quam dolorem odio culpa vel suscipit
+                            enim?
+                        </p>
+
+                        <div class="tab-titles">
+                            <p
+                                class="tab-links active-link"
+                                onclick="opentab(skills)"
+                            >
+                                Skills
+                            </p>
+                            <p class="tab-links" onclick="opentab(education)">
+                                Education
+                            </p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>
+                                    <span>Web Development</span><br />
+                                    HTML, JScript, CSS
+                                </li>
+                                <li>
+                                    <span>Java<br /></span>
+                                </li>
+                                <li>
+                                    <span>C++<br /></span>
+                                </li>
+                                <li>
+                                    <span>C<br /></span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>
+                                    <span>P.G.Garodia School(ICSE)</span
+                                    ><br />Till class X (2018)
+                                </li>
+                                <li>
+                                    <span>Pace Jr. College<br /></span> Classes
+                                    XI and XII (2018 - 2020)
+                                </li>
+                                <li>
+                                    <span
+                                        >BITS Pilani K K Birla Goa Campus (2020
+                                        - 2025)</span
+                                    ><br />BE Computer Science<br />MSc
+                                    Mathematics
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--portfolio my projects-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/portfolio.png" />
+                        <div class="layer">
+                            <h3>Personal Portfolio Website</h3>
+                            <a href="#"
+                                ><i class="fas fa-external-link-alt"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/quiz.png" />
+                        <div class="layer">
+                            <h3>Quiz website</h3>
+                            <a href="#"
+                                ><i class="fas fa-external-link-alt"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/landing.png" />
+                        <div class="layer">
+                            <h3>Landing Page</h3>
+                            <a href="#"
+                                ><i class="fas fa-external-link-alt"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p>
+                            <i class="fa-solid fa-paper-plane"></i
+                            >pulavarti.lalita@gmail.com
+                        </p>
+                        <p><i class="fa-solid fa-phone"></i>9820580418</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/lalitapulavarti/"
+                                ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                            <a
+                                href="https://www.linkedin.com/in/lalita-pulavarti"
+                                ><i class="fa-brands fa-linkedin"></i
+                            ></a>
+                            <a
+                                href="images/lalita-resume.pdf"
+                                download
+                                class="btn btn2"
+                                >Download Resume</a
+                            >
+                        </div>
+
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input
+                                    type="text"
+                                    name="Name"
+                                    placeholder="Your name"
+                                    required
+                                />
+                                <input
+                                    type="email"
+                                    name="Email"
+                                    placeholder="Your email"
+                                    required
+                                />
+                                <textarea
+                                    name="Message"
+                                    rows="6"
+                                    placeholder="Your Message"
+                                ></textarea>
+                                <button type="submit" class="btn btn2">
+                                    Submit
+                                </button>
+                            </form>
+                            <!-- <span id="msg">Hello</span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2023| Made By Lalita</p>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            const scriptURL =
+                "https://script.google.com/macros/s/AKfycbxGYiPAjn0--9cqbgDn8WLVqW2WF4enXnCAYHd6wquxbWgQ30jPoAy1wA5TW2Cws6ST/exec";
+            const form = document.forms["submit-to-google-sheet"];
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                    .then((response) => console.log("Success!", response))
+                    .catch((error) => console.error("Error!", error.message));
+            });
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
